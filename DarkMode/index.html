@@ -12,7 +12,7 @@
     <div class="d-flex align-items-center mode">
         <i class="fa fa-sun me-2"></i>
         <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onclick="setDarkMode()">
+            <input class="form-check-input" type="checkbox" role="switch" id="changeTheme" onclick="setDarkMode()">
         </div>
         <i class="fa fa-moon"></i>
     </div>
@@ -51,8 +51,8 @@
        if(localStorage.getItem("theme") == "dark") {
         setDarkMode();
 
-            if(document.getElementById("flexSwitchCheckChecked").checked) {
-                localStorage.setItem("flexSwitchCheckChecked", true)
+            if(document.getElementById("changeTheme").checked) {
+                localStorage.setItem("changeTheme", true)
             }
        }
 
@@ -62,7 +62,7 @@
             if(isDark) {
                 setDarkMode.checked = true;
                 localStorage.setItem("theme", "dark");
-                document.getElementById("flexSwitchCheckChecked").setAttribute("checked", "checked");
+                document.getElementById("changeTheme").setAttribute("checked", "checked");
             } else {
                 setDarkMode.checked = true;
                 localStorage.removeItem("theme", "dark");
