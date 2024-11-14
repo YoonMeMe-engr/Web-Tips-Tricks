@@ -1,0 +1,24 @@
+.mode {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+}
+
+.darkMode {
+    background-color: black;
+    color: white;
+}
+
+.darkMode .image {
+    color: white;
+    background-color: white;
+    fill: blue;
+}
+
+.darkMode #light-body {
+    background: black;
+}
+
+#light-body {
+    background: palevioletred;
+}

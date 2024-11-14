@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Menu Icon</title>
+    <style>
+        .bar {
+            width: 40px;
+            height: 4px;
+            background-color: rgb(116, 142, 212);
+            margin: 10px 0;
+            border-radius: 25px;
+            transition: 0.5s;
+        }
+
+        .show .one {
+            transform: rotate(-45deg) translate(-12px, 9px);
+        }
+
+        .show .two {
+            opacity: 0;
+        }
+
+        .show .three {
+            transform: rotate(45deg) translate(-10px, -8px);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-icon">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+        <div class="bar three"></div>
+    </div>
+    <script>
+        let menu = document.querySelector(".menu-icon");
+        menu.addEventListener("click", function() {
+            this.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
