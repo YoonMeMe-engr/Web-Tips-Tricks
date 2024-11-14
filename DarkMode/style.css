@@ -1,7 +1,8 @@
 .mode {
     position: fixed;
-    top: 5px;
+    top: 10px;
     right: 10px;
+    margin-right: 20px;
 }
 
 .darkMode {
@@ -9,16 +10,44 @@
     color: white;
 }
 
-.darkMode .image {
-    color: white;
-    background-color: white;
-    fill: blue;
-}
-
-.darkMode #light-body {
+.darkMode body {
     background: black;
 }
 
-#light-body {
+body {
     background: palevioletred;
+}
+
+.darkMode .git {
+    fill: white;
+}
+
+.git {
+    fill: black;
+}
+
+.btn {
+    color: palevioletred;
+}
+.darkMode .btn {
+    color: white;
+}
+
+.social {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-right: 2px solid rgb(3, 3, 3);
+}
+
+.darkMode .social {
+    border-right: 2px solid rgb(253, 252, 252);
+}
+
+.darkMode .social a i {
+    color: white;
+}
+
+.social a i {
+    color: #000;
 }
